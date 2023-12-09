@@ -3985,9 +3985,13 @@ html.w-mod-js [data-ix="opacity-0-initial-appearance"] {
   right: 0;
   height: 100%;
   /* background-color: #3498db; */
-  background-color: #ecf0f1;
+  /* background-color: #ecf0f1; */
+
+  background-color: white;
   overflow-x: hidden;
   transition: width 0.3s ease-in-out;
+
+  box-shadow: -10px 0 15px -5px rgba(0, 0, 0, 0.5);
 }
 
 #sidebar ul {
@@ -4042,6 +4046,44 @@ html.w-mod-js [data-ix="opacity-0-initial-appearance"] {
 
 .messanger:hover,
 .messanger:focus,
-.messanger:active{
+.messanger:active {
   transform: scale(1.2);
+}
+
+#toggleButton-mob {
+  background-color: white;
+
+  font-size: 18px;
+
+  transition: transform 0.3s;
+}
+
+#toggleButton-mob:hover,
+#toggleButton-mob:focus,
+#toggleButton-mob:active {
+  transform: scale(1.2);
+}
+
+#toggleButton {
+  background-color: white;
+
+  font-size: 1.4vw;
+
+  transition: transform 0.3s;
+}
+
+#toggleButton:hover,
+#toggleButton:focus,
+#toggleButton:active {
+  transform: scale(1.2);
+}
+
+.book_background {
+  position: relative;
+  bottom: 50px;
+  background-image: url(../images/book_4.jpg);
+  opacity: 0.4;
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* встановіть висоту за вашими потребами */
 }
