@@ -99,8 +99,8 @@ form2.addEventListener("submit", async (e) => {
 
   // console.log('formData', formData)
 
-  form.querySelector('input[name="nameCustom2"]').value = "";
-  form.querySelector('input[name="phoneCustom2"]').value = "";
+  form2.querySelector('input[name="nameCustom2"]').value = "";
+  form2.querySelector('input[name="phoneCustom2"]').value = "";
 
   await sendRequest(formData);
 
