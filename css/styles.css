@@ -2519,6 +2519,8 @@ img {
 
 .typed {
   height: 45px;
+  color: #ed4a4c;
+
 }
 
 .r-line-p {
@@ -3243,7 +3245,9 @@ img {
 }
 
 .typed2 {
-  color: #150035;
+  /* color: #150035; */
+  /* color: red; */
+  color: #ed4a4c;
   font-size: 2.2vw;
   line-height: 100%;
 }
