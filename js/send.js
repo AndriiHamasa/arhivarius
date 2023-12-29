@@ -27,8 +27,8 @@ const sendRequest = async (body) => {
   }
 };
 
-const form1 = document.querySelector(".order_form_custom1");
-const form2 = document.querySelector(".order_form_custom2");
+const form1 = document.getElementById("order_form_custom1");
+const form2 = document.getElementById("order_form_custom2");
 
 form1.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -36,8 +36,7 @@ form1.addEventListener("submit", async (e) => {
   const name1 = form1.querySelector('input[name="nameCustom1"]').value;
   const phone1 = form1.querySelector('input[name="phoneCustom1"]').value;
 
-  // console.log('name', name)
-  // console.log('phone', phone)
+  
 
   const formData = {
     nickname,
@@ -53,32 +52,7 @@ form1.addEventListener("submit", async (e) => {
 
   await sendRequest(formData);
 
-  // console.log('formData', formData)
 
-  // if (nickname === "" || name === "" || phone === "") {
-  //   Swal.fire({
-  //     title: "перевірте дані",
-  //     icon: "error",
-  //     timer: 3000,
-  //     showConfirmButton: true,
-  //   });
-  // } else {
-  //   console.log("formData", formData);
-
-  //   Swal.fire({
-  //     title: "Замовлення успішне",
-  //     icon: "success",
-  //     timer: 3000,
-  //     showConfirmButton: true,
-  //   });
-
-  //   // alert("Данные отправлено")
-
-  //   form.querySelector('input[name="nameCustom"]').value = "";
-  //   form.querySelector('input[name="phoneCustom"]').value = "";
-
-  //   await sendRequest(formData);
-  // }
 });
 
 form2.addEventListener("submit", async (e) => {
@@ -87,8 +61,7 @@ form2.addEventListener("submit", async (e) => {
   const name2 = form2.querySelector('input[name="nameCustom2"]').value;
   const phone2 = form2.querySelector('input[name="phoneCustom2"]').value;
 
-  // console.log('name', name)
-  // console.log('phone', phone)
+  
 
   const formData = {
     nickname,
@@ -97,35 +70,11 @@ form2.addEventListener("submit", async (e) => {
     phone: phone2,
   };
 
-  // console.log('formData', formData)
 
   form2.querySelector('input[name="nameCustom2"]').value = "";
   form2.querySelector('input[name="phoneCustom2"]').value = "";
 
   await sendRequest(formData);
 
-  // if (nickname === "" || name === "" || phone === "") {
-  //   Swal.fire({
-  //     title: "перевірте дані",
-  //     icon: "error",
-  //     timer: 3000,
-  //     showConfirmButton: true,
-  //   });
-  // } else {
-  //   console.log("formData", formData);
-
-  //   Swal.fire({
-  //     title: "Замовлення успішне",
-  //     icon: "success",
-  //     timer: 3000,
-  //     showConfirmButton: true,
-  //   });
-
-  //   // alert("Данные отправлено")
-
-  //   form.querySelector('input[name="nameCustom"]').value = "";
-  //   form.querySelector('input[name="phoneCustom"]').value = "";
-
-  //   await sendRequest(formData);
-  // }
+  
 });
